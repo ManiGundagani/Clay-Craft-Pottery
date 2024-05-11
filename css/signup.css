@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,rgb(233, 59, 88),yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../asset/images/rev\(10\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#img1{
+    height: 100vh;
+    width: 20vw;
+  
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    filter: hue-rotate(-170deg);
+    z-index: -1;
+
+}
+#img2{
+    height: 150vh;
+    width: 20vw;
+  
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    bottom: 0px;
+    transform: rotateZ(20deg);
+    filter: hue-rotate(-298deg);
+    z-index: -1;
+
+}
+#maincon{
+    height: 40vw;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.556);
+  
+}
+#vedcon{
+    height: 100%;
+    width: 39%;
+    /* background-color: green; */
+    border-top-left-radius:1vw;
+    border-bottom-left-radius: 1vw;
+    background-position:100% 100%;
+    backface-visibility: hidden;
+    background-clip: content-box;
+    background-size: cover;
+   
+}
+#signupcon{
+    height:100%;
+    width: 71%;
+    background-color:rgba(0, 0, 0, 0.378);
+    border-top-right-radius:1vw;
+    border-bottom-right-radius: 1vw;
+    display: flex;
+    justify-content: space-around;
+    overflow:auto;
+    align-items: center;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    color: white;
+
+    
+}
+#signupcon::-webkit-scrollbar
+{
+    display: none;
+}
+video{
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    border-top-left-radius:1vw;
+    border-bottom-left-radius: 1vw;
+    
+
+}
+#signupHeading{
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+  
+    font-weight: bold;
+    font-size: 3vw;
+    font: Playfair Display;
+}
+.inp{
+    height: 5vw;
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0.5px 0.5px 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 0.3vw;
+   text-align: center;
+}
+.inp::placeholder{
+  color: rgb(155, 146, 146);
+  letter-spacing: 0.1vw;
+  text-align: center;
+  border-radius: 2vw;
+
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color:white;
+}
+textarea{
+    height:10vh ;
+    width: 100%;
+    background: transparent;
+    box-shadow: 2px 1px 2px white;
+    color: white;
+    letter-spacing: 0.5vw;
+
+    
+}
+textarea::placeholder{
+    /* color: white; */
+    letter-spacing: 0.2vw;
+}
+
+#signupbotton{
+    
+        width: 35%;
+        height: 5vw;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        background-color: royalblue;
+        border: none;
+        outline: none;
+        font-size: 1vw;
+        letter-spacing: 1vw;
+        font-weight: bold;
+        color: white;
+        transition: all 0.5s;
+    }
+    #signupbotton:hover{
+        animation: animate 0.5s linear 0s 1 alternate ;
+        cursor: pointer;
+        transform: scale(1.2);
+        
+    }
+    
